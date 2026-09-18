@@ -1,30 +1,34 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>My Website</title>
+    
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
     <style>
-        body {
+        
+        html, body {
             margin: 0;
             padding: 0;
-            background-color: #000000;
-            text-align: center;
-        }
-        .container {
             width: 100%;
-            margin-top: 20px;
+            height: 100%;
+            background-color: #000000;
+            overflow: hidden;
         }
-        img {
-            max-width: 90%;
-            height: auto;
-            border: 4px solid #ffffff;
+
+        .fullscreen-image {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
         }
     </style>
 </head>
-<body>
-    <div class="container">
-        <!-- Replace photo.jpg with your actual image file name or web URL -->
-        <img src="photo.jpg" alt="My Photo">
-    </div>
+
+    <img src="photo.jpg" class="fullscreen-image" alt="My Photo">
+
 </body>
 </html>
